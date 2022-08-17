@@ -9,8 +9,11 @@ add_executable (lt "src/Main.cpp")
 phx_configure_output_dir (lt)
 phx_configure_target_properties (lt)
 
-target_compile_definitions (lt PRIVATE DEBUG=0)
-target_link_libraries (lt phx)
+target_compile_definitions (lt PRIVATE
+        $<$<CONFIG:Debug>:DEBUG=1>
+        $<$<CONFIG:Release>:DEBUG=0>
+        )
+target_link_libraries (lt PRIVATE phx)
 
 set_target_properties (lt PROPERTIES
   OUTPUT_NAME_DEBUG "lt${ARCH}d"

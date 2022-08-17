@@ -4,6 +4,7 @@ if __embedded__   == nil then __embedded__   = false end
 
 ffi = require('ffi')
 jit = require('jit')
+lfs = require('ffi.lfs_ffi')
 for k, v in pairs(math) do
   if type(v) == 'function' then
     _G[k] = v
