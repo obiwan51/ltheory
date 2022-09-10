@@ -1,5 +1,6 @@
 bin/
 build/
+cmake-build-*/
 obj/
 log/
 screenshot/
@@ -7,3 +8,4 @@ cmake-build-debug/
 cmake-build-release/
 out/
 .idea/
+.DS_Store

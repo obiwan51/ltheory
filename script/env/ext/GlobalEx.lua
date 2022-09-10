@@ -81,12 +81,14 @@ function requireAll (path)
       end
     end
   end
+--   print(path)
   if not dir then Log.Error('Failed to open directory <%s>', path) end
 
   local results = {}
   local files, dirs = io.listdirex(dir)
   for i = 1, #dirs do
     local dirName = dirs[i]
+--     print(dirName)
     results[dirName] = requireAll(path..'.'..dirName)
   end
 

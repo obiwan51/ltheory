@@ -7,6 +7,7 @@ local rng = RNG.FromTime()
 function LTheory:generate ()
   self.seed = rng:get64()
   if true then
+    self.seed = 3136335626558855526ULL
     -- self.seed = 7035008865122330386ULL
     -- self.seed = 15054808765102574876ULL
     -- self.seed = 1777258448479734603ULL
