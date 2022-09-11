@@ -34,6 +34,16 @@ Now, you can download the repository:
 
 - `git clone --recursive https://github.com/JoshParnell/ltheory.git ltheory`
 
+## Install dependencies
+
+### macOS
+
+- `brew install freetype sdl2 lz4 bullet luajit`
+
+### Ubuntu
+
+- `sudo apt install libfreetype-dev libsdl2-dev liblz4-dev libbullet-dev libluajit-5.1-dev`
+
 ## Compiling
 
 Once you have the repository, the build process proceeds in two steps (as with other CMake builds): generating the build files, and then building. There is a Python script `configure.py` at the top level of the repository to help you do this easily.
